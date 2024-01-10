@@ -13,6 +13,7 @@
 #define MAX_LINE_LENGTH 1024
 
 int print_world(void);
+void execute_command(char* command);
 void handle_the_script(int argc, char *argv[]);
 void run_command(char *command, char **arguments);
 char *finding_full_path(const char *command);
