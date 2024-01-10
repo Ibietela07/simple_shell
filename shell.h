@@ -18,7 +18,7 @@ void handle_the_script(int argc, char *argv[]);
 void run_command(char *command, char **arguments);
 char *finding_full_path(const char *command);
 int startsWith(const char *str, const char *prefix);
-void process_cmdline(char **input_line);
+void process_cmdline(char **cmd_line);
 int my_builtins(char **command);
 int execute_set(const char *env_variable, const char *data);
 void execute_env(char **args);
