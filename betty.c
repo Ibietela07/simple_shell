@@ -1,25 +1,25 @@
 #include "shell.h"
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * check_malloc - a function that allocates memory using malloc
+ *print_world - a function that prints world to the standard output
  *
- * @a: input int
- * Return: void
+ * Return: always 0.
  */
 
+int print_world(void)
 {
-int main(void)
+	printf("world");
+	return(0);
 }
-void *check_malloc(unsigned int a)
+
+/**
+ * main - start point of the program
+ * 
+ * Return: void
+ */
+int main(void)
 {
-        void *ptr;
-
-        ptr = malloc(a);
-        if (ptr == NULL)
-        {
-        exit(98);
-        }
-
-        return (ptr);
+	print_world();
+	return(0);
 }

@@ -12,7 +12,7 @@
 
 #define MAX_LINE_LENGTH 1024
 
-void *check_malloc(unsigned int a);
+int print_world(void);
 void handle_the_script(int argc, char *argv[]);
 void run_command(char *command, char **arguments);
 char *find_path(const char *command);
