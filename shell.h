@@ -15,7 +15,7 @@
 int print_world(void);
 void handle_the_script(int argc, char *argv[]);
 void run_command(char *command, char **arguments);
-char *the_full_path(const char *command);
+char *finding_full_path(const char *command);
 int startsWith(const char *str, const char *prefix);
 void process_cmdline(char **input_line);
 int my_builtins(char **command);
