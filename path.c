@@ -1,4 +1,7 @@
 #include "shell.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "unistd.h"
 
 /**
  * the_full_path - the full path of a command line.
@@ -28,7 +31,7 @@ char *the_full_path(const char *command)
 
 	while (folder != NULL)
 	{
-		char full_path[1022];
+		char full_path[1024];
 
 		snprintf(full_path, sizeof(full_path), "%s/%s", folder, command);
 		if (access(full_path, X_OK) == 0)
@@ -41,3 +44,21 @@ char *the_full_path(const char *command)
 	free(clone_path);
 	return (NULL);
 }
+
+int main(void)
+{
+    char *path = the_full_path("ls");
+
+    if (path != NULL)
+    {
+        printf("Full path: %s\n", path);
+        free(path);
+    }
+    else
+    {
+        printf("Command not found in PATH\n");
+    }
+
+    return 0;
+}
+
