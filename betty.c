@@ -10,16 +10,16 @@
 int print_world(void)
 {
 	printf("world");
-	return(0);
+	return (0);
 }
 
 /**
  * main - start point of the program
- * 
+ *
  * Return: void
  */
 int main(void)
 {
 	print_world();
-	return(0);
+	return (0);
 }
