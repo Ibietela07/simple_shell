@@ -31,4 +31,4 @@ void my_exit(char **args, int *status);
 void exit_shell(int status);
 extern char **environ;
 
-#endif
+#endif /* SHELL_H */
